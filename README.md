@@ -4,6 +4,8 @@
 
 Proyecto académico de redes implementado en **GNS3**, orientado a simular una red empresarial segmentada por áreas. El laboratorio incluye configuración de VLANs, VTP, enlaces trunk, Router-on-a-Stick, DHCP, ACLs, NAT/PAT, hosts Docker y una aplicación cliente-servidor en C++ usando sockets TCP.
 
+📄 [Ver documentación completa (PDF)](docs/proyecto_gns3_enterprise_network_lab.pdf)
+
 ## Objetivo del proyecto
 
 El objetivo fue diseñar, implementar y documentar una red empresarial con tres sectores principales:
