@@ -1,0 +1,40 @@
+! ESWPB - Switch Planta Baja
+! Funciones: VTP server, VLANs, trunks y puertos de acceso
+!
+hostname ESWPB
+!
+vtp domain REDES
+vtp mode server
+vtp version 2
+!
+! En IOS ESW/c3725 las VLANs pueden crearse con vlan database:
+! vlan database
+!  vlan 10 name ADM
+!  vlan 20 name VENTAS
+!  vlan 30 name APP
+!
+interface FastEthernet1/0
+ description Trunk hacia RSJ
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ no shutdown
+!
+interface FastEthernet1/1
+ description Trunk hacia ESWP1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ no shutdown
+!
+interface FastEthernet1/2
+ description PCVentas2 - VLAN 20
+ switchport mode access
+ switchport access vlan 20
+ no shutdown
+!
+interface FastEthernet1/3
+ description ServerApp - VLAN 30
+ switchport mode access
+ switchport access vlan 30
+ no shutdown
+!
+end
