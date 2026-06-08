@@ -203,7 +203,7 @@ Esto permitió trabajar sobre el servidor sin exponer directamente GNS3 a Intern
 .
 ├── README.md
 ├── docs/
-│   └── proyecto-redes-gns3.pdf
+│   └── proyecto_gns3_enterprise_network_lab.pdf
 ├── configs/
 │   ├── router-rsj.txt
 │   ├── eswpb.txt
