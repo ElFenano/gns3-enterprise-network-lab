@@ -216,6 +216,7 @@ Esto permitió trabajar sobre el servidor sin exponer directamente GNS3 a Intern
 │   └── clienteApp.cpp
 └── images/
     └── topologia.png
+    └── caratula.png
 ```
 
 ## Problemas encontrados
